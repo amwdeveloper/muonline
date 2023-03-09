@@ -12,50 +12,56 @@
     <header class="bg-[url('assets/img/bg-header.jpg')]">
         <div class="container m-auto">
             <nav class="m-auto p-6 flex justify-between items-center lg:flex-1">
-                <div class="text-yellow-200 font-semibold text-xl">AMW<span class="text-white">WEB Developer</span>
+                <div class="text-blue-300 font-semibold text-3xl tracking-widest">AMW<span class="text-white">WEB</span>
                 </div>
-                <ul class="flex justify-center gap-5 items-center">
-                    <li>
-                        <a href="#"
-                            class="font-semibold text-sm leading-6 text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Home</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="font-semibold text-sm leading-6 text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Templates</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="font-semibold text-sm leading-6 text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Princing</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="font-semibold text-sm leading-6 text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Contact</a>
-                    </li>
-                </ul>
 
-                <ul>
-                    <li><a href="#"
-                            class="font-semibold text-sm leading-6 relative bg-yellow-500 rounded-xl text-white py-1 px-4 block hover:bg-white hover:text-blue-900">Login
-                            <i class="fas fa-long-arrow-alt-right"></i></a></li>
-                </ul>
+                <button class="bg-neutral-600 py-1 px-2.5 hidden text-white rounded-sm my-1 max-lg:block button-mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div
+                    class="mobile block max-lg:fixed right-0 top-0 p-1 visible max-lg:bg-white max-lg:h-full max-lg:w-80 z-30 lg:flex max-lg:shadow-lg max-lg:shadow-neutral-700  max-lg:-right-full">
+                    <ul class="lg:flex justify-center gap-5 items-center">
+                        <button
+                            class="bg-neutral-600 py-1 px-2.5 mx-auto hidden relative text-white rounded-full my-1 max-lg:block button-closed-mobile">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <li>
+                            <a href="#"
+                                class="font-semibold text-sm leading-6 lg:text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Tutoriais</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-semibold text-sm leading-6 lg:text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Templates</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-semibold text-sm leading-6 lg:text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Planos</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="font-semibold text-sm leading-6 lg:text-white py-1 px-4 block rounded-xl hover:bg-blue-100 hover:text-blue-900">Dúvidas</a>
+                        </li>
+                        <div class="bg-slate-300 my-3 w-full h-px lg:w-px lg:h-10 max-lg:block lg:bg-slate-800"></div>
+                        <li><a href="#"
+                                class="font-semibold text-sm lg:bg-yellow-500 rounded-full lg:text-white py-1 px-4 block max-lg:text-center max-lg:bg-slate-700 max-lg:text-white lg:hover:bg-white hover:text-blue-900">Login
+                                <i class="fas fa-long-arrow-alt-right"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
             </nav>
 
             <div class="flex justify-between py-32 px-4">
-                <div
-                    class="w-96 lg:w-1/2 lg:mx-auto lg:rounded-tl-3xl lg:rounded-br-3xl lg:text-center lg:p-3 lg:bg-slate-800/50">
+                <div class="w-96 lg:w-1/2 lg:mx-auto lg:text-center lg:p-3">
                     <p
                         class="text-lg border-solid border-b-2 border-blue-200/25 py-1 text-white w-48 lg:w-96 lg:mx-auto">
                         AMWWEB V3.0</p>
-                    <h1 class="text-3xl lg:text-3xl py-2 text-slate-400 uppercase font-semibold">Compatível com servidor
+                    <h1 class="text-3xl lg:text-3xl py-2 text-slate-300 uppercase font-semibold">Compatível com servidor
                         97D & Season
                     </h1>
                     <p class="space-y-4 text-gray-200 text-base font-semibold py-5">Desenvolvida pensando especialmente
                         em você</p>
-                    <a href="#"
-                        class="bg-neutral-500 text-white rounded-l-3xl py-2 px-4 transition-all duration-300 hover:bg-blue-500">Planos</a>
-
-                    <a href="#"
-                        class="bg-neutral-500 text-white rounded-r-3xl py-2 px-4 transition-all duration-300 hover:bg-yellow-500">Portfólios</a>
                 </div>
 
 
@@ -65,11 +71,29 @@
 
     <section class="container p-3 my-20 mx-auto flex justify-center gap-10 flex-wrap">
         <div class="max-w-lg relative rounded-2xl overflow-hidden">
-            <button class="absolute w-full h-full bg-neutral-600/60 text-stone-200 z-20 text-7xl top-0 left-0"><i
-                    class="fas fa-play-circle"></i></button>
+            <button
+                class="absolute w-full h-full bg-neutral-600/60 text-stone-200 z-20 text-7xl top-0 left-0 media-play"><i
+                    class="fas fa-play-circle hover:animate-pulse"></i></button>
             <img src="../dist/assets/img/web.webp" class="blur-sm">
         </div>
-        <div class="max-w-lg p-5">
+
+        <div
+            class="w-full h-full flex justify-center items-center bg-neutral-900/80 fixed top-0 left-0 z-20 p-4 invisible media-view">
+            <section class="max-w-5xl w-full lg:h-2/3 h-2/4">
+                <button
+                    class="bg-white py-1 px-2.5 mx-auto block relative text-black rounded-full mb-2 closed-media-view">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="h-full">
+                    <iframe class="w-full  h-full" src="https://www.youtube.com/embed/Nx2BoyOjoDY"
+                        title="Apresentação AMWWEB V3.0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+        </div>
+
+        <div class="max-w-lg p-5 max-lg:max-w-full">
             <h1 class="text-2xl pb-2 mb-3 border-b-2 border-neutral-300 uppercase tracking-widest text-neutral-500">
                 Website Designer</h1>
             <p class="text-lg text-slate-700 line leading-10">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
@@ -104,11 +128,25 @@
                 <div class="p-3 bg-gray-100">
                     <ul>
                         <li class="p-1 mb-2 border-b border-gray-300 text-sm">Tema:
-                            <span class="float-right text-slate-700 text-sm">Default
+                            <span class="float-right text-slate-700 text-sm relative"><span
+                                    class="font-semibold">Default</span>
+                                <small
+                                    class="rounded-full px-2 py-0.5 bg-slate-500 text-white text-center text-xs  group/notification"><i
+                                        class="fas fa-info"></i>
+                                    <div
+                                        class="absolute -top-20 -left-16 bg-slate-900 text-white w-32 text-center p-1 rounded-lg text-xs hidden group-hover/notification:block">
+                                        Tema <span class="text-yellow-200 font-semibold">exclusivo</span> será
+                                        acrescentado +<span class="text-yellow-200 font-semibold">R$50,00</span> no
+                                        valor da
+                                        primeira parcela
+                                    </div>
+                                </small>
+
                             </span>
                         </li>
                         <li class="p-1 mb-2 border-b border-gray-300 text-sm">Plugins:
-                            <span class="float-right text-slate-700 text-sm">Pix Automático
+                            <span class="float-right text-slate-700 text-sm"><span class="font-semibold">Pix
+                                    Automático</span>
                                 <small class="text-yellow-700 underline">Brinde</small>
                             </span>
                         </li>
@@ -118,9 +156,26 @@
                         </li>
                         <li class="p-1 mb-2 text-sm">Idiomas:
                             <span class="float-right text-slate-700 text-sm flex gap-2">
-                                <img src="../dist/assets/img/pt_BR.png" alt="" class="w-6">
-                                <img src="../dist/assets/img/es_ES.png" alt="" class="w-6">
-                                <img src="../dist/assets/img/en_US.png" alt="" class="w-6">
+                                <div class="group relative">
+                                    <img src="../dist/assets/img/pt_BR.png" alt="" class="w-6">
+                                    <p
+                                        class="absolute bg-neutral-700 text-white -top-6 py-0.5 px-2 rounded-sm hidden text-xs group-hover:block">
+                                        Português</p>
+                                </div>
+                                <div class="group relative">
+                                    <img src="../dist/assets/img/es_ES.png" alt="" class="w-6">
+                                    <p
+                                        class="absolute bg-neutral-700 text-white -top-6 py-0.5 px-2 rounded-sm hidden text-xs group-hover:block">
+                                        Espanhol</p>
+
+                                </div>
+                                <div class="group relative">
+                                    <img src="../dist/assets/img/en_US.png" alt="" class="w-6">
+                                    <p
+                                        class="absolute bg-neutral-700 text-white -top-6 py-0.5 px-2 rounded-sm hidden text-xs group-hover:block">
+                                        Inglês</p>
+
+                                </div>
                             </span>
                         </li>
                     </ul>
@@ -132,10 +187,10 @@
                     <div
                         class="border-2 border-blue-400 w-32 h-32 text-center rounded-full text-blue-400 text-sm flex justify-center items-center m-auto">
                         <p class="font-semibold uppercase pb-2 border-b-2 border-blue-400 border-dotted text-2xl">
-                            Vitalicio</p>
+                            Vitalício</p>
                     </div>
                     <p class="text-4xl text-slate-500 pt-2 pb-5">
-                        <sup class="text-sm text-slate-400">R$</sup>500,00<sup class="text-sm text-slate-400"></sup>
+                        <sup class="text-sm text-slate-400">R$</sup>1.500,00<sup class="text-sm text-slate-400"></sup>
                     </p>
 
                     <a href="#"
@@ -144,13 +199,22 @@
                 <div class="p-3 bg-gray-100">
                     <ul>
                         <li class="p-1 mb-2 border-b border-gray-300 text-sm">Tema:
-                            <span class="float-right text-slate-700 text-sm">Default
+                            <span class="float-right text-slate-700 text-sm relative">Default
+
+                                <small
+                                    class="rounded-full px-2 py-0.5 bg-slate-500 text-white text-center text-xs  group/notification"><i
+                                        class="fas fa-info"></i>
+                                    <div
+                                        class="absolute -top-16 -left-16 bg-slate-900 text-white w-32 text-center p-1 rounded-lg text-xs hidden group-hover/notification:block">
+                                        Tema <span class="text-yellow-200 font-semibold">exclusivo</span>, já está
+                                        incluso no pacote vitalício
+                                    </div>
+                                </small>
+
                             </span>
                         </li>
                         <li class="p-1 mb-2 border-b border-gray-300 text-sm">Plugins:
-                            <span class="float-right text-slate-700 text-sm">Pix Automático
-                                <small class="text-yellow-700 underline">Brinde</small>
-                            </span>
+                            <span class="float-right text-slate-700 text-sm">Grátis</span>
                         </li>
                         <li class="p-1 mb-2 border-b border-gray-300 text-sm">Updates:
                             <span class="float-right text-slate-700 text-sm">Grátis
@@ -158,9 +222,26 @@
                         </li>
                         <li class="p-1 mb-2 text-sm">Idiomas:
                             <span class="float-right text-slate-700 text-sm flex gap-2">
-                                <img src="../dist/assets/img/pt_BR.png" alt="" class="w-6">
-                                <img src="../dist/assets/img/es_ES.png" alt="" class="w-6">
-                                <img src="../dist/assets/img/en_US.png" alt="" class="w-6">
+                                <div class="group relative">
+                                    <img src="../dist/assets/img/pt_BR.png" alt="" class="w-6">
+                                    <p
+                                        class="absolute bg-neutral-700 text-white -top-6 py-0.5 px-2 rounded-sm hidden text-xs group-hover:block">
+                                        Português</p>
+                                </div>
+                                <div class="group relative">
+                                    <img src="../dist/assets/img/es_ES.png" alt="" class="w-6">
+                                    <p
+                                        class="absolute bg-neutral-700 text-white -top-6 py-0.5 px-2 rounded-sm hidden text-xs group-hover:block">
+                                        Espanhol</p>
+
+                                </div>
+                                <div class="group relative">
+                                    <img src="../dist/assets/img/en_US.png" alt="" class="w-6">
+                                    <p
+                                        class="absolute bg-neutral-700 text-white -top-6 py-0.5 px-2 rounded-sm hidden text-xs group-hover:block">
+                                        Inglês</p>
+
+                                </div>
                             </span>
                         </li>
                     </ul>
@@ -170,86 +251,217 @@
         </div>
     </section>
 
+    <section class=" bg-slate-800 p-2">
+        <section class="container my-20 mx-auto">
+            <h1 class="font-semibold text-2xl mb-16 text-center text-white">Tutoriais</h1>
+            <div class="flex justify-center gap-10 flex-wrap">
+                <a href="#"
+                    class="relative w-72 border bg-white rounded-xs shadow-lg  p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
+                    <div class="relative overflow-hidden">
+                        <button
+                            class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0">
+                            <i class="fas fa-play-circle"></i>
+                        </button>
+                        <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-sm">
+                    </div>
+
+                    <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
+                        <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
+                            Aprenda como configurar a web_config do site
+                        </h1>
+                        <button
+                            class="py-1 px-2 text-slate-700 tracking-wider uppercase text-sm rounded-sm animate-pulse">Saiba
+                            mais
+                            <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </a>
+                <a href="#"
+                    class="relative w-72 border bg-white rounded-xs shadow-lg  p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
+                    <div class="relative overflow-hidden">
+                        <button
+                            class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0">
+                            <i class="fas fa-play-circle"></i>
+                        </button>
+                        <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-sm">
+                    </div>
+
+                    <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
+                        <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
+                            Aprenda como configurar a web_config do site
+                        </h1>
+                        <button
+                            class="py-1 px-2 text-slate-700 tracking-wider uppercase text-sm rounded-sm animate-pulse">Saiba
+                            mais
+                            <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </a>
+                <a href="#"
+                    class="relative w-72 border bg-white rounded-xs shadow-lg  p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
+                    <div class="relative overflow-hidden">
+                        <button
+                            class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0">
+                            <i class="fas fa-play-circle"></i>
+                        </button>
+                        <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-sm">
+                    </div>
+
+                    <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
+                        <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
+                            Aprenda como configurar a web_config do site
+                        </h1>
+                        <button
+                            class="py-1 px-2 text-slate-700 tracking-wider uppercase text-sm rounded-sm animate-pulse">Saiba
+                            mais
+                            <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </a>
+                <a href="#"
+                    class="relative w-72 border bg-white rounded-xs shadow-lg  p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
+                    <div class="relative overflow-hidden">
+                        <button
+                            class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0">
+                            <i class="fas fa-play-circle"></i>
+                        </button>
+                        <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-sm">
+                    </div>
+
+                    <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
+                        <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
+                            Aprenda como configurar a web_config do site
+                        </h1>
+                        <button
+                            class="py-1 px-2 text-slate-700 tracking-wider uppercase text-sm rounded-sm animate-pulse">Saiba
+                            mais
+                            <i class="fas fa-long-arrow-alt-right"></i></button>
+                    </div>
+                </a>
+
+
+            </div>
+        </section>
+    </section>
+
     <section class="container p-3 my-20 mx-auto">
-        <h1 class="text-neutral-800 font-semibold text-2xl mb-16 text-center">Tutoriais</h1>
+        <h1 class="text-neutral-800 font-semibold text-2xl mb-16 text-center">Templates</h1>
+
         <div class="flex justify-center gap-10 flex-wrap">
-            <a href="#"
-                class="relative w-80 border rounded-xs shadow-lg shadow-neutral-200 p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
-                <div class="relative overflow-hidden">
-                    <button
-                        class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0"><i
-                            class="fas fa-play-circle"></i></button>
-                    <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-lg">
+
+            <div
+                class="relative w-80 border cursor-pointer bg-white rounded-xs shadow-lg  p-1 transition-all ease-out duration-200 top-0 hover:-top-4">
+                <div class="overflow-hidden">
+                    <img src="../dist/assets/img/play.jpg" alt="" class="image-gallery w-full">
                 </div>
+            </div>
 
-                <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
-                    <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
-                        Aprenda como configurar a web_config do site
-                    </h1>
-                    <button class="py-1 px-2 text-yellow-700 tracking-wider uppercase text-sm rounded-sm">Saiba mais <i
-                            class="fas fa-long-arrow-alt-right animate-pulse"></i></button>
+            <div
+                class="relative w-80 border cursor-pointer bg-white rounded-xs shadow-lg  p-1 transition-all ease-out duration-200 top-0 hover:-top-4">
+                <div class="overflow-hidden">
+                    <img src="../dist/assets/img/play.jpg" alt="" class="image-gallery w-full">
                 </div>
-            </a>
+            </div>
 
-            <a href="#"
-                class="relative w-80 border rounded-xs shadow-lg shadow-neutral-200 p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
-                <div class="relative overflow-hidden">
-                    <button
-                        class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0"><i
-                            class="fas fa-play-circle"></i></button>
-                    <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-lg">
+            <div
+                class="relative w-80 border cursor-pointer bg-white rounded-xs shadow-lg  p-1 transition-all ease-out duration-200 top-0 hover:-top-4">
+                <div class="overflow-hidden">
+                    <img src="../dist/assets/img/play.jpg" alt="" class="image-gallery w-full">
                 </div>
+            </div>
 
-                <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
-                    <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
-                        Aprenda como configurar a web_config do site
-                    </h1>
-                    <button class="py-1 px-2 text-yellow-700 tracking-wider uppercase text-sm rounded-sm">Saiba mais <i
-                            class="fas fa-long-arrow-alt-right animate-pulse"></i></button>
+            <div
+                class="relative w-80 border cursor-pointer bg-white rounded-xs shadow-lg  p-1 transition-all ease-out duration-200 top-0 hover:-top-4">
+                <div class="overflow-hidden">
+                    <img src="../dist/assets/img/play.jpg" alt="" class="image-gallery w-full">
                 </div>
-            </a>
+            </div>
 
-            <a href="#"
-                class="relative w-80 border rounded-xs shadow-lg shadow-neutral-200 p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
-                <div class="relative overflow-hidden">
-                    <button
-                        class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0"><i
-                            class="fas fa-play-circle"></i></button>
-                    <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-lg">
+            <div
+                class="relative w-80 border cursor-pointer bg-white rounded-xs shadow-lg  p-1 transition-all ease-out duration-200 top-0 hover:-top-4">
+                <div class="overflow-hidden">
+                    <img src="../dist/assets/img/play.jpg" alt="" class="image-gallery w-full">
                 </div>
+            </div>
 
-                <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
-                    <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
-                        Aprenda como configurar a web_config do site
-                    </h1>
-                    <button class="py-1 px-2 text-yellow-700 tracking-wider uppercase text-sm rounded-sm">Saiba mais <i
-                            class="fas fa-long-arrow-alt-right animate-pulse"></i></button>
+            <div
+                class="relative w-80 border cursor-pointer bg-white rounded-xs shadow-lg  p-1 transition-all ease-out duration-200 top-0 hover:-top-4">
+                <div class="overflow-hidden">
+                    <img src="../dist/assets/img/play.jpg" alt="" class="image-gallery w-full">
                 </div>
-            </a>
+            </div>
 
-            <a href="#"
-                class="relative w-80 border rounded-xs shadow-lg shadow-neutral-200 p-2 transition-all ease-out duration-200 top-0 hover:-top-4">
-                <div class="relative overflow-hidden">
-                    <button
-                        class="absolute w-full h-full bg-neutral-600/30 text-stone-200 z-20 text-5xl top-0 left-0"><i
-                            class="fas fa-play-circle"></i></button>
-                    <img src="../dist/assets/img/play.jpg" alt="" class="w-full blur-lg">
+        </div>
+
+        <div
+            class="w-full h-full flex justify-center items-center bg-neutral-900/80 fixed top-0 left-0 z-20 p-4 invisible template-view">
+            <section class="max-w-5xl w-full lg:h-5/6 h-2/4 relative">
+                <button
+                    class="bg-white py-1 px-2.5 mx-auto block relative text-black rounded-full mb-2 closed-template">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="h-full">
+                    <img src="" alt="" class="image-gallery-view w-full">
                 </div>
-
-                <div class="pb-2 px-2 mt-4 border-t border-solid border-gray-300">
-                    <h1 class="mb-4 text-neutral-700 tracking-tight font-semibold py-2">
-                        Aprenda como configurar a web_config do site
-                    </h1>
-                    <button class="py-1 px-2 text-yellow-700 tracking-wider uppercase text-sm rounded-sm">Saiba mais <i
-                            class="fas fa-long-arrow-alt-right animate-pulse"></i></button>
-                </div>
-            </a>
-
-
+            </section>
         </div>
     </section>
 
+    <section class="container p-3 my-20 mx-auto">
+        <h1 class="text-neutral-800 font-semibold text-2xl mb-16 text-center">(F.A.Q) Dúvidas</h1>
 
+        <div class="mx-auto flex p-3 gap-10 justify-center flex-wrap">
+            <div class="p-2 text-sm w-72 bg-white shadow-md shadow-neutral-300 rounded-md">
+                <h1 class="p-1.5 text-white bg-neutral-700 rounded-md">Prazo de Entrega</h1>
+                <p class="p-2 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid maiores ipsa quos saepe a
+                    quisquam ducimus ut molestiae explicabo suscipit eum voluptatibus, deleniti iste vitae voluptates
+                    quis
+                    numquam labore!</p>
+            </div>
+            <div class="p-2 text-sm w-72 bg-white shadow-md shadow-neutral-300 rounded-md">
+                <h1 class="p-1.5 text-white bg-neutral-700 rounded-md">Prazo de Entrega</h1>
+                <p class="p-2 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid maiores ipsa quos saepe a
+                    quisquam ducimus ut molestiae explicabo suscipit eum voluptatibus, deleniti iste vitae voluptates
+                    quis
+                    numquam labore!</p>
+            </div>
+            <div class="p-2 text-sm w-72 bg-white shadow-md shadow-neutral-300 rounded-md">
+                <h1 class="p-1.5 text-white bg-neutral-700 rounded-md">Prazo de Entrega</h1>
+                <p class="p-2 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid maiores ipsa quos saepe a
+                    quisquam ducimus ut molestiae explicabo suscipit eum voluptatibus, deleniti iste vitae voluptates
+                    quis
+                    numquam labore!</p>
+            </div>
+            <div class="p-2 text-sm w-72 bg-white shadow-md shadow-neutral-300 rounded-md">
+                <h1 class="p-1.5 text-white bg-neutral-700 rounded-md">Prazo de Entrega</h1>
+                <p class="p-2 tracking-wide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum aliquid maiores ipsa quos saepe a
+                    quisquam ducimus ut molestiae explicabo suscipit eum voluptatibus, deleniti iste vitae voluptates
+                    quis
+                    numquam labore!</p>
+            </div>
+        </div>
+    </section>
+
+    <button class="fixed right-3 bottom-3 py-1 px-3 bg-slate-700 rounded-md text-white z-20">
+        <i class="fas fa-long-arrow-alt-up"></i>
+    </button>
+
+    <footer class="bg-slate-800 pt-10">
+        <div class="container m-auto flex gap-5 flex-wrap justify-center max-lg:block">
+
+            <div class="max-w-92">
+                <ul class="mt-2 flex flex-wrap gap-10 justify-center">
+                    <li><a href="#" class="text-slate-400 hover:text-white text-sm">Painel do cliente </a></li>
+                    <li><a href="#" class="text-slate-400 hover:text-white text-sm">Termos de Serviço</a></li>
+                    <li><a href="#" class="text-slate-400 hover:text-white text-sm">Sobre Nós</a></li>
+                    <li><a href="#" class="text-slate-400 hover:text-white text-sm">Suporte</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="bg-slate-900 p-4 mt-10 text-center text-white text-sm">
+            &copy; 2023 AMWDEVELOPER. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="../dist/assets/js/web.js"></script>
 </body>
 
 </html>
